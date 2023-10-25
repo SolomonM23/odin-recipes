@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <h1>Odin Recipes</h1>
-    <ul>
-      <li><a href="recipes/bakedziti.html">Baked Ziti</a></li>
-      <li><a href="recipes/butternut-squash.html">Butternut Squash</a></li>
-      <li><a href="recipes/pumpkin-chili.html">Pumpkin Chili</a></li>
-    </ul>
+    <div class="index-list">
+      <ul>
+        <li><a href="recipes/bakedziti.html">Baked Ziti</a></li>
+        <li><a href="recipes/butternut-squash.html">Butternut Squash</a></li>
+        <li><a href="recipes/pumpkin-chili.html">Pumpkin Chili</a></li>
+      </ul>
+    </div>
+    <script>
+      document.body.addEventListener("pointermove", (e) => {
+        const { currentTarget: el, clientX: x, clientY: y } = e;
+        const {
+          top: t,
+          left: l,
+          width: w,
+          height: h,
+        } = el.getBoundingClientRect();
+        el.style.setProperty("--posX", x - l - w / 2);
+        el.style.setProperty("--posY", y - t - h / 2);
+      });
+    </script>
   </body>
 </html>
