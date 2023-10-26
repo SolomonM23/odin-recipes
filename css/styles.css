@@ -2,6 +2,7 @@
 
 body { 
 background-color: rgb(255, 220, 23);
+font-family: Courier New, 'Times New Roman', serif;
 }
 /* background graphic from animatedbackgrounds.me */
 
@@ -29,4 +30,9 @@ h2 {
 
 .list.steps {
     margin-bottom: 10rem;
+}
+
+img {
+    border-radius: 20px;
+    margin-left: 1rem;
 }
