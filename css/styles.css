@@ -5,22 +5,28 @@ background-color: rgb(255, 220, 23);
 }
 /* background graphic from animatedbackgrounds.me */
 
-.index-heading {
+h1 {
     color: white;
     text-align: center;
     font-size: 3rem;
 }
 
-.index-list {
-    width: 50vh;
-    height: 200px;
-    background-color: rgb(255, 253, 245, .5);
-    border-radius: 20px;
-    margin-left: 1rem;
+h2 {
+    text-indent: 2rem;
 }
-
-ul {
-    padding-top: 50px;
+.description {
     font-size: 2rem;
 }
 
+.list {
+    width: 50vw;
+    background-color: rgb(255, 253, 245, .5);
+    border-radius: 20px;
+    margin-left: 1rem;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.list.steps {
+    margin-bottom: 10rem;
+}
